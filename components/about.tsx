@@ -18,16 +18,16 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3 text-left">
-        I'm currently an undergraduate studying{" "}
+        I&apos;m currently an undergraduate studying{" "}
         <span className="font-medium">Computer Science and Economics</span> at
-        the University of Washington. I’ve had the opportunity to design,
+        the University of Washington. I&apos;ve had the opportunity to design,
         deploy, and scale <span className="font-medium">AI tools</span> across
         various company sizes and diverse industries, ranging from consumer
         products and DevOps to chip manufacturing.
       </p>
 
       <p className="text-left">
-        At the University, I've been involved in research in{" "}
+        At the University, I&apos;ve been involved in research in{" "}
         <span className="font-medium">social and healthcare computing</span> at
         two Allen School Labs, and I assist in teaching various
         undergraduate-level CS courses.
