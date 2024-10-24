@@ -4,12 +4,13 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import { FaDatabase } from "react-icons/fa";
 import { FaProjectDiagram } from "react-icons/fa";
-import amazonImg from "@/public/amazon.png";  // Assuming images for the companies
-import tenstorrentImg from "@/public/tenstorrent.png";
-import arcadeImg from "@/public/arcade.png";
-import hereticImg from "@/public/heretic.png";
+// import amazonImg from "@/public/amazon.png";  // Assuming images for the companies
+// import tenstorrentImg from "@/public/tenstorrent.png";
+// import arcadeImg from "@/public/arcade.png";
+// import hereticImg from "@/public/heretic.png";
 import chapteritImg from "@/public/chapterit.png";
-import mezzoImg from "@/public/mezzo.png";
+import mezzoImg from "@/public/Mezzo.jpg";
+
 
 export const links = [
   {
@@ -23,10 +24,6 @@ export const links = [
   {
     name: "Projects",
     hash: "#projects",
-  },
-  {
-    name: "Skills",
-    hash: "#skills",
   },
   {
     name: "Experience",
@@ -46,7 +43,7 @@ export const experiencesData = [
       "Developed and deployed a full-stack dashboard for shippers, providing real-time status updates and AI-driven insights using React, AWS Lambda, and DynamoDB. Projected to reduce the Shipper Escalation Metric by 30%.",
     icon: React.createElement(CgWorkAlt),
     date: "June 2024 - September 2024",
-    imageUrl: amazonImg,
+    // imageUrl: amazonImg,
   },
   {
     title: "AI/ML Applied Scientist Intern",
@@ -55,7 +52,7 @@ export const experiencesData = [
       "Led a joint-effort with Chipstack.ai to deploy AI-assisted chip verification. Built and deployed an inference server using Tenstorrent hardware, increasing system adoption with 5000+ inference requests.",
     icon: React.createElement(CgWorkAlt),
     date: "March 2024 - June 2024",
-    imageUrl: tenstorrentImg,
+    // imageUrl: tenstorrentImg,
   },
   {
     title: "Machine Learning, AI Engineering Intern",
@@ -64,7 +61,7 @@ export const experiencesData = [
       "Reduced average completion time by 33% by refactoring the AI pipeline. Fine-tuned text-to-image models, improving manufacturability score by 30%.",
     icon: React.createElement(CgWorkAlt),
     date: "September 2023 - February 2024",
-    imageUrl: arcadeImg,
+    // imageUrl: arcadeImg,
   },
   {
     title: "Software Engineering Intern",
@@ -73,7 +70,7 @@ export const experiencesData = [
       "Refactored 30+ Python scripts into a full-stack Django REST service MVP. Created an automated data pipeline using web scraping to reduce model training time by 25%.",
     icon: React.createElement(CgWorkAlt),
     date: "June 2023 - September 2023",
-    imageUrl: hereticImg,
+    // imageUrl: hereticImg,
   },
 ] as const;
 
