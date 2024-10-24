@@ -10,6 +10,10 @@ import { FaProjectDiagram } from "react-icons/fa";
 // import hereticImg from "@/public/heretic.png";
 import chapteritImg from "@/public/chapterit.png";
 import mezzoImg from "@/public/Mezzo.jpg";
+import arcadeImg from "@/public/arcade.png";
+import hereticImg from "@/public/heretic2.png";
+import amazonImg from "@/public/amazon.png";
+import tenstorrentImg from "@/public/tenstorrent.png";
 
 
 export const links = [
@@ -22,16 +26,12 @@ export const links = [
     hash: "#about",
   },
   {
-    name: "Projects",
-    hash: "#projects",
-  },
-  {
     name: "Experience",
     hash: "#experience",
   },
   {
-    name: "Contact",
-    hash: "#contact",
+    name: "Projects",
+    hash: "#projects",
   },
 ] as const;
 
@@ -43,7 +43,7 @@ export const experiencesData = [
       "Developed and deployed a full-stack dashboard for shippers, providing real-time status updates and AI-driven insights using React, AWS Lambda, and DynamoDB. Projected to reduce the Shipper Escalation Metric by 30%.",
     icon: React.createElement(CgWorkAlt),
     date: "June 2024 - September 2024",
-    // imageUrl: amazonImg,
+    imageUrl: amazonImg,
   },
   {
     title: "AI/ML Applied Scientist Intern",
@@ -52,7 +52,7 @@ export const experiencesData = [
       "Led a joint-effort with Chipstack.ai to deploy AI-assisted chip verification. Built and deployed an inference server using Tenstorrent hardware, increasing system adoption with 5000+ inference requests.",
     icon: React.createElement(CgWorkAlt),
     date: "March 2024 - June 2024",
-    // imageUrl: tenstorrentImg,
+    imageUrl: tenstorrentImg,
   },
   {
     title: "Machine Learning, AI Engineering Intern",
@@ -61,7 +61,7 @@ export const experiencesData = [
       "Reduced average completion time by 33% by refactoring the AI pipeline. Fine-tuned text-to-image models, improving manufacturability score by 30%.",
     icon: React.createElement(CgWorkAlt),
     date: "September 2023 - February 2024",
-    // imageUrl: arcadeImg,
+    imageUrl: arcadeImg,
   },
   {
     title: "Software Engineering Intern",
@@ -70,7 +70,7 @@ export const experiencesData = [
       "Refactored 30+ Python scripts into a full-stack Django REST service MVP. Created an automated data pipeline using web scraping to reduce model training time by 25%.",
     icon: React.createElement(CgWorkAlt),
     date: "June 2023 - September 2023",
-    // imageUrl: hereticImg,
+    imageUrl: hereticImg,
   },
 ] as const;
 
@@ -78,14 +78,14 @@ export const projectsData = [
   {
     title: "Chapterit",
     description:
-      "Developed a live AI-powered web app that chapters videos using a custom GPT-3.5 prompt layer. Deployed using Flask, PostgreSQL, and Heroku, serving over 400 users.",
+      "Developed a live AI-powered web app that chapters videos using a custom GPT-3.5 prompt layer. Deployed using Flask, PostgreSQL, and Heroku, serving over 100 requests.",
     tags: ["Python", "Flask", "PostgreSQL", "Heroku", "NLP"],
     imageUrl: chapteritImg,
   },
   {
     title: "Mezzo",
     description:
-      "Architected and built a 3-tier software platform for event planning using React Native and Spring Boot. Launched to 40 active users, planning over 100 events.",
+      "Architected and built a 3-tier software platform for event planning using React Native and Spring Boot. Launched to University of Washington.",
     tags: ["React Native", "Java", "Spring Boot", "Azure"],
     imageUrl: mezzoImg,
   },

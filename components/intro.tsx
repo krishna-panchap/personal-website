@@ -7,6 +7,7 @@ import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import { MdOutlineMail } from "react-icons/md";
 
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/activesectioncontext";
@@ -64,20 +65,19 @@ export default function Intro() {
           delay: 0.2,
         }}
       >
-        <Link
-          href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-xl outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+        <a
+          href="mailto:kpanchap@gmail.com"
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-xl outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-gray-2"
           onClick={() => {
-            setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here{" "}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
-        </Link>
+          Contact me!{" "}
+          <MdOutlineMail className="opacity-70 group-hover:translate-x-1 transition" />
+        </a>
 
         <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-xl outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-gray-2"
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-xl outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-gray-2"
           href="/KrishnaPanchap2025Resume.pdf"
           download
         >
@@ -86,16 +86,16 @@ export default function Intro() {
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-xl focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border border-gray-2"
-          href="https://linkedin.com"
+          className=" bg-gray-900 text-white hover:text-white p-4 flex items-center gap-2 rounded-xl focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border border-gray-2"
+          href="https://linkedin.com/in/kpanchap"
           target="_blank"
         >
           <BsLinkedin />
         </a>
 
         <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-xl focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border  border-gray-2"
-          href="https://github.com"
+          className=" bg-gray-900 text-white hover:text-white p-4 flex items-center gap-2 text-[1.35rem] rounded-xl focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border  border-gray-2"
+          href="https://github.com/krishna-panchap/networking"
           target="_blank"
         >
           <FaGithubSquare />
