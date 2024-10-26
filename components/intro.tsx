@@ -43,7 +43,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hi, I'm Krishna!</span>
+        <span className="font-bold">Hi, I&apos;m Krishna!</span>
       </motion.h1>
       <motion.p
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xltext-xl sm:text-2xl"
