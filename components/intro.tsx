@@ -3,11 +3,9 @@ import React from "react";
 import Image from "next/image";
 import meImg from "@/public/me.png";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
-import { HiDownload } from "react-icons/hi";
-import { FaGithubSquare } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
+import { IoDocumentTextOutline } from "react-icons/io5";
 
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/activesectioncontext";
@@ -45,7 +43,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hi, I&apos;m Krishna!</span>
+        <span className="font-bold">Hi, I'm Krishna!</span>
       </motion.h1>
       <motion.p
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xltext-xl sm:text-2xl"
@@ -66,39 +64,37 @@ export default function Intro() {
         }}
       >
         <a
+          className=" bg-gray-900 text-white hover:text-white p-4 flex items-center gap-2 rounded-xl focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border border-gray-2"
+          href="https://linkedin.com/in/kpanchap"
+          target="_blank"
+        >
+          <FaLinkedinIn />
+        </a>
+
+        <a
+          className=" bg-gray-900 text-white hover:text-white p-[0.89rem] flex items-center gap-2 text-[1.35rem] rounded-xl focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border  border-gray-2"
+          href="https://github.com/krishna-panchap/networking"
+          target="_blank"
+        >
+          <FaGithub />
+        </a>
+        <a
+          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-xl outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-gray-2"
+          href="/Krishna_Panchap_resume.pdf"
+          target="_blank"
+        >
+          Resume
+          <IoDocumentTextOutline className="opacity-60 group-hover:translate-x-1 transition" />
+        </a>
+        <a
           href="mailto:kpanchap@gmail.com"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-xl outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-gray-2"
           onClick={() => {
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me!{" "}
+          Email{" "}
           <MdOutlineMail className="opacity-70 group-hover:translate-x-1 transition" />
-        </a>
-
-        <a
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-xl outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer border border-gray-2"
-          href="/KrishnaPanchap2025Resume.pdf"
-          download
-        >
-          Resume
-          <HiDownload className="opacity-60 group-hover:translate-x-1 transition" />
-        </a>
-
-        <a
-          className=" bg-gray-900 text-white hover:text-white p-4 flex items-center gap-2 rounded-xl focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border border-gray-2"
-          href="https://linkedin.com/in/kpanchap"
-          target="_blank"
-        >
-          <BsLinkedin />
-        </a>
-
-        <a
-          className=" bg-gray-900 text-white hover:text-white p-4 flex items-center gap-2 text-[1.35rem] rounded-xl focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border  border-gray-2"
-          href="https://github.com/krishna-panchap/networking"
-          target="_blank"
-        >
-          <FaGithubSquare />
         </a>
       </motion.div>
     </section>
