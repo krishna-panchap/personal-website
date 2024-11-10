@@ -73,7 +73,7 @@ export default function Intro() {
 
         <a
           className=" bg-gray-900 text-white hover:text-white p-[0.89rem] flex items-center gap-2 text-[1.35rem] rounded-xl focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer border  border-gray-2"
-          href="https://github.com/krishna-panchap/networking"
+          href="https://github.com/krishna-panchap/"
           target="_blank"
         >
           <FaGithub />
